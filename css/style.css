@@ -1,0 +1,87 @@
+body {
+    font-family:'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #fff8fb;
+    color: #333;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ff9ac2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  header p {
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  nav {
+    background-color: #f9dc5c;
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #6b4f3b;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f28ab2;
+}
+  
+  main {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h2, h3 {
+    color: #d63384;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+
+  .receitas-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .receitas-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+  
+  .receitas-lista img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ffd3e0;
+  }
+  footer {
+    background-color:#f28ab2;
+    color: #eee;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+    
+    
