@@ -1,19 +1,17 @@
 function exibirMensagem(event) {
     event.preventDefault();
     
-    const nome = document.getElementById("login-nome").value;
-    const duvida = document.getElementById("login-duvida").value;
-    const matricula = document.getElementById("login-matricula").value;
-    
-    if (nome === "" || duvida === "" || matricula === "") {
+    const email = document.getElementById("login-email").value;
+    const senha = document.getElementById("login-senha").value;
+    if (email === "" || senha === "") {
         alert("Por favor, preencha todos os campos!");
     } else {
-        const mensagem = "Sua pergunta foi enviada com sucesso!";
+        const mensagem = "Bem vindo(a) de volta !!";
         document.getElementById("saida").innerHTML = mensagem;
         alert(mensagem);
         
-        document.getElementById("login-nome").value = "";
-        document.getElementById("login-duvida").value = "";
-        document.getElementById("login-matricula").value = "";
+        document.getElementById("login-email").value = "";
+        document.getElementById("login-senha").value = "";
     }
+
 }
