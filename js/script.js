@@ -1,17 +1,14 @@
-function exibirMensagem(event) {
+document.querySelector("form").addEventListener("submit", function(event) {
+
     event.preventDefault();
-    
-    const email = document.getElementById("login-email").value;
-    const senha = document.getElementById("login-senha").value;
+
+    var email = document.getElementById("login-email").value;
+    var senha = document.getElementById("login-senha").value;
+
     if (email === "" || senha === "") {
-        alert("Por favor, preencha todos os campos!");
+        alert("Preencha o email e a senha!");
     } else {
-        const mensagem = "Bem vindo(a) de volta !!";
-        document.getElementById("saida").innerHTML = mensagem;
-        alert(mensagem);
-        
-        document.getElementById("login-email").value = "";
-        document.getElementById("login-senha").value = "";
+        alert("Login realizado com sucesso!");
     }
 
-}
+});
